@@ -11,6 +11,9 @@ export default function CreateNote(){
     const router = useRouter();
 
     const create = async() => {
+        console.log(title);
+        console.log(content);
+
         await fetch('http://127.0.0.1:8090/api/collections/notes/records', {
             method: 'POST',
             headers: {
